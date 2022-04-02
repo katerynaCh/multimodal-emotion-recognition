@@ -12,7 +12,7 @@ Fusion blocks
 </p>
 
 ## Dependencies
-The code is tested with pytorch=1.9.0. To install required packages:
+The code is tested with Python=3.9.5 and pytorch=1.9.0. To install required packages:
 ```
 pip install -r requirements.txt
 ```
