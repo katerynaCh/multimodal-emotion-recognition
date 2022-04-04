@@ -55,7 +55,7 @@ python create_annotations.py
 As a result you will have annotations.txt file that you can use further for training.
 
 #### Training
-For visual module weight initialization, download the pre-trained EfficientFace from [here](https://github.com/zengqunzhao/EfficientFace) under 'Pre-trained models'. In our experiments, we use the model pre-trained on AffectNet7, i.e., EfficientFace_Trained_on_AffectNet7.pth.tar. If you want to use a different one, download it and later specify the path in \-\-pretrain_path argument to main.py
+For visual module weight initialization, download the pre-trained EfficientFace from [here](https://github.com/zengqunzhao/EfficientFace) under 'Pre-trained models'. In our experiments, we use the model pre-trained on AffectNet7, i.e., EfficientFace_Trained_on_AffectNet7.pth.tar. If you want to use a different one, download it and later specify the path in \-\-pretrain_path argument to main.py. Otherwise, you can ignore this step and train from scratch (although you will likely obtain lower performance).
 
 For training, run:
 ```python
@@ -66,8 +66,10 @@ You can optionally specify the following arguments:
 * \-\-mask [softhard | noise | nodropout ] = modality dropout variant. Default is softhard (check paper for details). 
 * \-\-num_heads = specifies the number of heads to use in the fusion module.
 * \-\-pretrain_path = path to EfficientFace pre-trained checkpoint.
+* \-\-result_path = path where the results and trained models will be saved
+* \-\-annotation_path = path to annotation file generated at previous step
 
-By default, this will train the model, select the best iteration on validation set and report the performance on the test set (in [DIR_TO_SAVE_RESULTS]/tes_set_bestval.txt). Other training parameters that can be adjusted are self-explanatory and can be seen from opts.py. The defaults are set to those used in the paper.
+By default, this will train the model, select the best iteration on validation set and report the performance on the test set (in [RESULT_PATH]/tes_set_bestval.txt). Other training parameters that can be adjusted are self-explanatory and can be seen from opts.py. The defaults are set to those used in the paper.
 
 The codebase defaults to single-fold training, but supports multi-fold cross-validation, for that you might want to specify the annotation path for each fold separately in main.py. 
 
@@ -75,7 +77,7 @@ The codebase defaults to single-fold training, but supports multi-fold cross-val
 If you want to test previously trained model specify the --no_train and --no_val arguments as well as the path to the experiment folder containing the checkpoint:
 
 ```python
-python main.py --annotation_path [ANNOTATION_PATH] --no_train --no_val --result_path [PATH_TO_CHECKPOINT_FOLDER]
+python main.py  --no_train --no_val --result_path [PATH_TO_CHECKPOINT_FOLDER]
 ```
 #### Using your own data
 For training on a different dataset: 
