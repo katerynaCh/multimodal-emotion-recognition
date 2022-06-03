@@ -1,3 +1,6 @@
+	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-attention-fusion-for-audiovisual-emotion/facial-emotion-recognition-on-ravdess)](https://paperswithcode.com/sota/facial-emotion-recognition-on-ravdess?p=self-attention-fusion-for-audiovisual-emotion)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-attention-fusion-for-audiovisual-emotion/emotion-recognition-on-ravdess)](https://paperswithcode.com/sota/emotion-recognition-on-ravdess?p=self-attention-fusion-for-audiovisual-emotion)
 # Multimodal [audiovisual] emotion recognition
 
 
