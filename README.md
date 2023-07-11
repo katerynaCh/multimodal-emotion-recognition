@@ -83,7 +83,7 @@ If you want to test previously trained model specify the --no_train and --no_val
 python main.py  --no_train --no_val --result_path [PATH_TO_CHECKPOINT_FOLDER]
 ```
 
-We share three pretrained models used in the paper, one for each attention types and all using modality dropout: https://tuni-my.sharepoint.com/:f:/g/personal/kateryna_chumachenko_tuni_fi/EvPvmdroOg1Hgtsvxo6N9yMBgC9nHjo-V1FVHwzcf8FTqw?e=GemHm1. The split for these models is:
+We share three pretrained models used in the paper, one for each attention types and all using modality dropout: [https://tuni-my.sharepoint.com/:f:/g/personal/kateryna_chumachenko_tuni_fi/EvPvmdroOg1Hgtsvxo6N9yMBgC9nHjo-V1FVHwzcf8FTqw?e=GemHm1](https://tuni-my.sharepoint.com/:f:/g/personal/kateryna_chumachenko_tuni_fi/EvPvmdroOg1Hgtsvxo6N9yMBgC9nHjo-V1FVHwzcf8FTqw?e=188a8U). The split for these models is:
 test: 5,10,16,19; val: 11,13,18,22; train: the rest. Please note the RAVDESS license before using these models.
 #### Using your own data
 For training on a different dataset: 
