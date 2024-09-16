@@ -3,7 +3,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-attention-fusion-for-audiovisual-emotion/emotion-recognition-on-ravdess)](https://paperswithcode.com/sota/emotion-recognition-on-ravdess?p=self-attention-fusion-for-audiovisual-emotion)
 # Multimodal [audiovisual] emotion recognition
 
-
+## Preface
+If you find this repository useful for your needs, you might be interested in our newer work on multimodal (audiovisual) emotion recognition in-the-wild from CVPRW'24: https://github.com/katerynaCh/MMA-DFER. It achieves state-of-the-art on dynamic in-the-wild datasets MAFW and DFEW usng vision and audio. 
 
 ## About
 This repository implements a multimodal network for emotion recognition from audio and video data following the paper "[Self-attention fusion for audiovisual emotion recognition with incomplete data]" accepted to ICPR 2022. We provide implementations for [Ravdess] dataset of speech and frontal face view data corresponding to 8 emotions: 01 = neutral, 02 = calm, 03 = happy, 04 = sad, 05 = angry, 06 = fearful, 07 = disgust, 08 = surprised. We provide implementations of three fusion variants ('late transformer', 'intermediate transformer', 'intermediate attention') and modality dropouts.
